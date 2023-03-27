@@ -12,7 +12,7 @@ const Shop = () => {
         .then(data=>setProducts(data))
     },[])
     return (
-    <Row>
+    <Row >
         {
         products.map(product=> <Product product={product} key={product.id}></Product>)
         }
