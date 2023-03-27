@@ -1,9 +1,11 @@
 import React from 'react';
-import { Button, Card, Col, Image } from 'react-bootstrap';
+import { Button, Card, Col, Image, Row } from 'react-bootstrap';
 
 const Product = (props) => {
     const {id,name, seller, ratings, price, img}=props.product;
-    return(<Col  xs={12} sm={2} md={4} className="mb-2" >
+    return(
+
+    <Col  xs={12} sm={2} md={4} className="mb-2" >
         <Card className='product-card'>
             <Image src={img}/> 
             
@@ -11,7 +13,7 @@ const Product = (props) => {
             <p>Price: {price}</p>
             <p>Manufacturer: {seller}</p>
             <p>Rating: {ratings}</p>
-            <Button style={{position:"absolute", bottom:"0", width:"90%"}}>Add To Cart</Button>
+            <Button onClick={()=>{props.handler(props.product)}} style={{position:"absolute", bottom:"0", width:"90%"}}>Add To Cart</Button>
 
         </Card>
     </Col>)
