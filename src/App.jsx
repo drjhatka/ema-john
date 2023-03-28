@@ -10,14 +10,9 @@ function App() {
       <Row>
         <Header></Header>
       </Row>
-
       <Row>
-          <Shop></Shop>
-          <Col xs={2} md={3} lg={3}>
-            <Cart></Cart>
-        </Col>
+        <Shop></Shop>
       </Row>
-
     </Container>
 
   )

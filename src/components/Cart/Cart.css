@@ -1,0 +1,16 @@
+.cart_container{
+    border:1px solid blue;
+    border-radius:5px;
+    position: sticky;
+    
+}
+
+.cart_title{
+    background-color: rgba(245, 197, 240, 0.39);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    border-radius:5px;
+    color:red;
+   
+}
