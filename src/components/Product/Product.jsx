@@ -7,7 +7,7 @@ const Product = (props) => {
         <Col md={4} className="mb-4">
         <Card className='product-card'>
             <Image src={img}/> 
-            
+            <small>{id}</small>
             <h5>{name}</h5>
             <p>Price: {price}</p>
             <p>Manufacturer: {seller}</p>
