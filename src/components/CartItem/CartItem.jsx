@@ -1,12 +1,18 @@
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-const CartItem = ({item}) => {
-    console.log("Item",item)
+const CartItem = (props) => {
+    console.log("Item",props)
     return (
-        <div>
-            <img src={item.img} className="img img-thumbnail" alt="" />
-
-        </div>
+<Row className='mb-4'>
+            <Col md={6}>
+                <img src={props.item.img} width={50} alt="" />
+            </Col>
+            <Col md={6}>
+            <p>Quantity: </p>
+            </Col>
+        </Row>
+        
     );
 };
 

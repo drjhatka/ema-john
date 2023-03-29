@@ -14,7 +14,7 @@ const Cart = (props) => {
     // }
     // let totalTax=totalCost*7/100;
     // let grandTotal=totalCost+totalShipping+totalTax;
-//console.log(totalCost)
+console.log("cart",props.cart)
     return (
         <>
              
@@ -22,9 +22,9 @@ const Cart = (props) => {
                 <Row>
                     <Col>
                     <h3>{props.cart.length}</h3>
-                        {/* {props.cart.map(item=>{ 
+                        {props.cart.map(item=>{ 
                            return  <CartItem item={item} key={item.ratingsCount}></CartItem>
-                        })} */}
+                        })}
                     </Col>
                     {/* <Col xs={12}>
                         <h5 className='cart_title'>Cart Items</h5>
